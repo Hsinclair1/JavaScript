@@ -39,11 +39,19 @@ function CalculateCost() {
     var sign = document.getElementById("user").value;
     var length = sign.length;
     var subtotal = length * 2.99;
-    var shipping = length * 0.99;
+    if (sign.length > 15)
+    {var shipping = length * 5.99; }
+    else { var shipping = length * 0.99; }
     var total = shipping + subtotal;
+    if (sign.length > 30) { document.getElementById("error").innerHTML = "Sign lenght to big"; }
     document.getElementById("userSign").textContent = sign;
     document.getElementById("tiles").textContent = length;
     document.getElementById("subtotal").textContent = `£${subtotal.toFixed(2)}`;
     document.getElementById("shipping").textContent = `£${shipping.toFixed(2)}`;
     document.getElementById("total").textContent = `£${total.toFixed(2)}`;
+}
+
+function font()
+{
+    console.log("1");
 }

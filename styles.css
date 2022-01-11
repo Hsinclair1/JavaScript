@@ -1,0 +1,22 @@
+.errorMessage {
+color:red;
+font-weight:bold;
+padding:2rem;
+}
+
+
+.font1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size:2rem;
+}
+.font2 {
+    font-family: 'Tempus Sans ITC';
+    font-weight: bold;
+    font-size: 2rem;
+}
+.font3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2rem;
+}

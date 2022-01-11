@@ -9,14 +9,22 @@
 </head>
 <body>
 
-    <h1>Sample Invoice</h1>
+    <h1 style="color:purple;">Sample Invoice</h1>
     <form>
         <label for="user">Enter your custom sign:</label><br>
-        <input id="user" type="text"  >
+        <input id="user" type="text">
         <button type="button" onclick="CalculateCost()">Submit</button>
     </form>
-  
+
+    <select id="font" onchange="font()">
+        <option>Select a font</option>
+        <option value="font1">Franklin</option>
+        <option value="font2">Tempus</option>
+        <option value="font2">Georgia</option>
+    </select>
+
     <h2>Customer Name: </h2>
+    <p class="errorMessage" id="error"></p>
     <table>
         <tr>
             <th>Custom Sign:</th>
