@@ -8,31 +8,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
     <h1>Sample Invoice</h1>
+    <form>
+        <label for="user">Enter your custom sign:</label><br>
+        <input id="user" type="text"  >
+        <button type="button" onclick="CalculateCost()">Submit</button>
+    </form>
+  
     <h2>Customer Name: </h2>
     <table>
         <tr>
-          <th>Custom Sign:</th>
-          <th id="userSign"></th>
+            <th>Custom Sign:</th>
+            <th id="userSign"></th>
         </tr>
         <tr>
-          <td>Total Tile Count:</td>
-          <td id="tiles"></td>
+            <td>Total Tile Count:</td>
+            <td id="tiles"></td>
         </tr>
         <tr>
-          <td>Subtotal:</td>
-          <td id="subtotal"></td>
+            <td>Subtotal:</td>
+            <td id="subtotal"></td>
         </tr>
         <tr>
-          <td>Shipping:</td>
-          <td id="shipping"></td>
+            <td>Shipping:</td>
+            <td id="shipping"></td>
         </tr>
         <tr>
-          <td>Total:</td>
-          <td id="total"></td>
+            <td>Total:</td>
+            <td id="total"></td>
         </tr>
-      </table>
+    </table>
     <script src="scripts.js"></script>
 </body>
 </html>

@@ -35,12 +35,15 @@
 
 //document.getElementById("timer").innerHTML = "hi";
 
-
-//invoice example
- var sign = "Bristol Zoo"
- var length = sign.length;
- var subtotal = length * 2.99;
-
- document.getElementById("userSign").textContent = sign;
- document.getElementById("tiles").textContent = length;
- document.getElementById("subtotal").textContent = `£${subtotal}`;
+function CalculateCost() {
+    var sign = document.getElementById("user").value;
+    var length = sign.length;
+    var subtotal = length * 2.99;
+    var shipping = length * 0.99;
+    var total = shipping + subtotal;
+    document.getElementById("userSign").textContent = sign;
+    document.getElementById("tiles").textContent = length;
+    document.getElementById("subtotal").textContent = `£${subtotal.toFixed(2)}`;
+    document.getElementById("shipping").textContent = `£${shipping.toFixed(2)}`;
+    document.getElementById("total").textContent = `£${total.toFixed(2)}`;
+}
